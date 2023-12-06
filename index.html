@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="reset.css" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@500&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@500&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@500&family=Source+Code+Pro:wght@200&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="icon"
+			href="./assets/icon.jpg" />
+		<title>Articles Portal</title>
+	</head>
+	<body>
+		<div class="app-container">
+			<div class="content-container">
+				<header>
+					<div class="navbar-container">
+						<nav class="header-nav">
+							<div><a href="./index.html">Главная</a></div>
+							<div><a href="./articles.html">Статьи</a></div>
+							<div><a href="./feedback.html">Отзывы</a></div>
+						</nav>
+					</div>
+				</header>
+				<main>
+					<div class="main-container">
+						<div class="chapter">
+							<h1>О сайте</h1>
+							<p>
+								<span>
+									Добро пожаловать на наш сайт, посвященный увлекательному миру
+									архитектуры! Здесь вы найдете глубокие и вдохновляющие статьи,
+									которые пригласят вас в путешествие по миру форм, функции и
+									красоты в постройках, которые нас окружают.
+								</span>
+								<span>
+									Архитектура - это искусство и наука создания пространств,
+									которые не только отражают наши потребности, но и вдохновляют
+									нас своей эстетикой и смыслом. Наши статьи погружаются в
+									разнообразные аспекты архитектуры, от истории и стилей до
+									современных инноваций и экологически устойчивых решений. </span
+								><span>
+									Не важно, являетесь ли вы профессиональным архитектором,
+									студентом архитектурного института или просто ценителем
+									красоты в постройках - мы приглашаем вас на путешествие,
+									которое расширит ваше понимание архитектурного искусства.
+									Добро пожаловать, чтобы открывать новые горизонты и
+									вдохновляться красотой архитектуры с нами!</span
+								>
+							</p>
+						</div>
+						<div class="gallery-title">Наведи, чтобы увеличить</div>
+						<div class="gallery">
+							<div class="gallery-container">
+								<img
+									src="./assets/keln.jpg"
+									alt="Кёльн" />
+								<img
+									src="./assets/paris.jpg"
+									alt="Париж" />
+								<img
+									src="./assets/moscow.jpg"
+									alt="Москва" />
+								<img
+									src="./assets/denmark.jpg"
+									alt="Дания" />
+							</div>
+						</div>
+
+						<div class="bottom-btns">
+							<a
+								class="btn bottom-btn"
+								href="./articles.html">
+								Перейти к статьям
+							</a>
+							<a
+								class="btn bottom-btn"
+								href="./feedback.html">
+								Перейти к отзывам
+							</a>
+						</div>
+					</div>
+				</main>
+			</div>
+			<footer>
+				<div class="footer-container">
+					<div class="footer-btn-container">
+						<button
+							class="btn"
+							onclick="copyEmail()"
+							id="copyEmail">
+							Связаться по почте
+						</button>
+						<a
+							href="#"
+							class="btn footer-btn"
+							>Репозиторий проекта</a
+						>
+					</div>
+					<span> Выполнено Кабаниным Н. А. для БГТУ "Военмех" </span>
+				</div>
+			</footer>
+		</div>
+		<script>
+			function copyEmail() {
+				/* Copy text into clipboard */
+				const button = (document.getElementById('copyEmail').innerText =
+					'Скопировано');
+				navigator.clipboard.writeText('o728b07@voenmeh.ru');
+			}
+		</script>
+	</body>
+</html>

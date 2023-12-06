@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="reset.css" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@500&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@500&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&family=Roboto+Mono:wght@500&family=Source+Code+Pro:wght@200&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="icon"
+			href="./assets/icon.jpg" />
+		<title>Articles Portal</title>
+	</head>
+	<body>
+		<div class="app-container">
+			<div class="content-container">
+				<header>
+					<div class="navbar-container">
+						<nav class="header-nav">
+							<div><a href="./index.html">Главная</a></div>
+							<div><a href="./articles.html">Статьи</a></div>
+							<div><a href="./feedback.html">Отзывы</a></div>
+						</nav>
+					</div>
+				</header>
+				<main>
+					<div class="main-container">
+						<h1 style="font-size: 28px; font-weight: 500; margin-bottom: 10px">
+							Статьи скоро будут добавлены!<br />Воспользуйтесь поиском:
+						</h1>
+						<form
+							action="http://yandex.ru/search"
+							method="get"
+							class="search-form">
+							<label for="text">Запрос</label>
+							<input
+								class="btn"
+								type="text"
+								name="text"
+								placeholder="Введите что-нибудь" />
+							<input
+								class="btn"
+								type="submit"
+								value="Поиск" />
+						</form>
+					</div>
+				</main>
+			</div>
+			<footer>
+				<div class="footer-container">
+					<div class="footer-btn-container">
+						<button
+							class="btn"
+							onclick="copyEmail()"
+							id="copyEmail">
+							Связаться по почте
+						</button>
+						<a
+							href="#"
+							class="btn footer-btn"
+							>Репозиторий проекта</a
+						>
+					</div>
+					<span> Выполнено Кабаниным Н. А. для БГТУ "Военмех" </span>
+				</div>
+			</footer>
+		</div>
+		<script>
+			function copyEmail() {
+				/* Copy text into clipboard */
+				const button = (document.getElementById('copyEmail').innerText =
+					'Скопировано');
+				navigator.clipboard.writeText('o728b07@voenmeh.ru');
+			}
+		</script>
+	</body>
+</html>

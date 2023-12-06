@@ -1,0 +1,228 @@
+:root {
+	--container-width: 720px;
+	--img-size: 250px;
+	box-sizing: content-box;
+}
+.app-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+header {
+	display: flex;
+	justify-content: center;
+	color: #bf0603;
+	background-color: #f4d58d;
+	font-size: 28px;
+
+	font-family: 'Roboto Mono', monospace;
+}
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	width: var(--container-width);
+}
+.header-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-nav div {
+	transition: 0.5s;
+}
+.header-nav div:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #8d0801;
+	transition: 0.5s;
+}
+main {
+	background-color: #708d81;
+	color: #001427;
+
+	font-family: 'Roboto Mono', monospace;
+	font-size: 18px;
+	padding-top: 20px;
+	flex-grow: 1;
+
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+.chapter {
+	margin-bottom: 10px;
+}
+.chapter h1 {
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.chapter p {
+	line-height: 1.4em;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: var(--container-width);
+}
+.gallery {
+	display: flex;
+	justify-content: center;
+}
+.gallery-title {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(2, var(--img-size));
+	grid-template-rows: repeat(2, var(--img-size));
+	gap: 40px;
+	margin-bottom: 70px;
+}
+.gallery-container img {
+	object-fit: cover;
+	width: var(--img-size);
+	height: var(--img-size);
+	border-radius: 15px;
+	transition: 0.5s;
+}
+
+.gallery-container img:hover {
+	transform: scale(1.2);
+	transition: 0.5s;
+	box-shadow: 0 0 3px 3px white;
+}
+.bottom-btns-container {
+	display: flex;
+	justify-content: center;
+}
+.bottom-btns {
+	display: flex;
+	justify-content: space-evenly;
+}
+.btn {
+	border: none;
+	padding: 16px 16px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	border-radius: 15px;
+}
+.bottom-btn {
+	background-color: #f4d58d;
+	color: #bf0603;
+	transition: 0.5s;
+}
+.bottom-btn:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+footer {
+	height: 200px;
+	background-color: rgb(0, 21, 41);
+	display: flex;
+	justify-content: center;
+}
+.footer-container {
+	width: var(--container-width);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-container span {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 700;
+	color: #f4d58d;
+	width: 300px;
+	align-self: center;
+}
+#copyEmail,
+.footer-btn {
+	font-size: inherit;
+	width: 200px;
+	transition: 0.5s;
+	background-color: white;
+}
+#copyEmail:hover,
+.footer-btn:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+.footer-btn-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	gap: 15px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.feedback-messages {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.feedback-messages li {
+	transition: 0.5s;
+	width: 200px;
+	background-color: rgba(0, 21, 41, 0.1);
+	padding: 5px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+.feedback-messages li:hover {
+	transition: 0.5s;
+	background-color: rgba(0, 21, 41, 0.4);
+}
+
+.feedback-messages .email {
+	color: #8d0801;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+	line-height: 1.5em;
+	max-width: 200px;
+	text-wrap: wrap;
+	overflow-wrap: break-word;
+}
+.feedback-messages .msg {
+	line-height: 1.5em;
+	color: #f4d58d;
+}
+.search-form {
+	display: flex;
+	flex-direction: column;
+}
+.search-form input[name='text'] {
+	font-size: 24px;
+	margin: 10px 0;
+	background-color: transparent;
+	border: 1px solid #f4d58d;
+	color: #8d0801;
+	padding: 5px;
+}
+.search-form input[type='submit'] {
+	background-color: #8d0801;
+	font-size: 24px;
+	color: #f4d58d;
+}
